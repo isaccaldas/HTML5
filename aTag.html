@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <!--The <a> tag defines a hyperlink, which is used to link from one page to another.
+        The most important attribute of the <a> element is the href attribute, 
+        which indicates the link's destination.
+    
+        By default, links will appear as follows in all browsers:
+
+        An unvisited link is underlined and blue
+        A visited link is underlined and purple
+        An active link is underlined and red
+
+        -->
+        
+        <!--Acessando um link externo com imagem-->
+        <a href="https://www.uol.com.br"><img src="C:\Users\Isac Caldas\OneDrive\Imagens\uol.jpg" width="50" height="50"></a>
+
+        <br>
+        <!--Acessando um link externo-->
+        <a href="https://www.uol.com.br">Visite o site do UOL!.</a>
+        
+        <br>
+        <!--Acessando uma página do projeto-->
+        <a href="index.html">Visite a página index.html.</a>
+
+        <br>
+        <!--Acessando uma link contendo javascript-->
+        <a href="javascript:alert('olá Mundo!');">Executando JavaScript</a>
+
+        <br>
+        <!-- The hreflang attribute specifies the language of the linked document.
+             This attribute is only used if the href attribute is set.
+            Note: This attribute is purely advisory(consultivo).
+            Ele é importante para os mecanismos de pesquisa para compreender o idioma de 
+            uma página da web específica e a qual região geográfica ela se destina.-->
+        <a href="https://www.adidas.com.br" hreflang="pt">Adidas</a>
+
+        <br>
+        <!--Atributo download
+            funciona quando testado no servidor. xampp por exemplo-->
+        <a href="data/info.txt" download="teste">
+            Download
+        </a>
+
+        <!--Atributo media. fazer o teste funcionar-->
+        <a href="data/info.txt" media="print and (resolution:300dpi)">
+        Open media attribute page for print.</a>
+        
+        <!--Atributo rel. testar-->
+        <a rel="nofollow" href="http://www.functravel.com/">Cheap Flights</a>
+
+
+    </body>
+</html>
