@@ -1,79 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <!--The <a> tag defines a hyperlink, which is used to link from one page to another.
-        The most important attribute of the <a> element is the href attribute, 
-        which indicates the link's destination.
-    
-        By default, links will appear as follows in all browsers:
+<head>
+<title>Page Title</title>
+</head>
+<body>
+      <!-- anchor linking to external file -->
+      <a href="http://www.democompany.com/">External Link</a>
+     
+      <!-- anchor linking to file on local file system -->
+     <a href="file:/D:\GIT Projetos\HTML5">local file link</a>
 
-        An unvisited link is underlined and blue
-        A visited link is underlined and purple
-        An active link is underlined and red
+     <!-- anchor invoking anonymous FTP -->
+    <a href="ftp://ftp.democompany.com/freestuff">Anonymous FTP
+    link</a>
 
-        -->
-        
-        <!--Acessando um link externo com imagem-->
-        <a href="https://www.uol.com.br"><img src="C:\Users\Isac Caldas\OneDrive\Imagens\uol.jpg" width="50" height="50"></a>
+    <!-- anchor invoking FTP with password -->
+    <a href="ftp://joeuser:secretpassword@democompany.com/path/file">
+    FTP with password</a>
 
-        <br>
-        <!--Acessando um link externo-->
-        <a href="https://www.uol.com.br">Visite o site do UOL!.</a>
-        
-        <br>
-        <!--Acessando uma página do projeto-->
-        <a href="index.html">Visite a página index.html.</a>
+    <!-- anchor invoking mail -->
+    <a href="mailto:fakeid@democompany.com">Send mail</a>
 
-        <br>
-        <!--Acessando uma link contendo javascript-->
-        <a href="javascript:alert('olá Mundo!');">Executando JavaScript</a>
+    <!-- anchor used to define target destination within document -->
+    <a name="jump">Jump target</a>
 
-        <br>
-        <!-- The hreflang attribute specifies the language of the linked document.
-             This attribute is only used if the href attribute is set.
-            Note: This attribute is purely advisory(consultivo).
-            Ele é importante para os mecanismos de pesquisa para compreender o idioma de 
-            uma página da web específica e a qual região geográfica ela se destina.-->
-        <a href="https://www.adidas.com.br" hreflang="pt">Adidas</a>
+    <!-- anchor linking internally to previous target anchor -->
+    <a href="#jump">Local jump within document</a>
 
-        <br>
-        <!--Atributo download
-            funciona quando testado no servidor. xampp por exemplo-->
-        <a href="data/info.txt" download="teste">
-            Download
-        </a>
+    <!-- anchor linking externally to previous target anchor -->
+    <a href="http://www.democompany.com/document#jump">
+    Remote jump to a position within a document</a>
 
-        <!--Atributo target
-        The target attribute specifies where to open the linked document:
-        blank	Opens the linked document in a new window or tab
-        _self	Opens the linked document in the same frame as it was clicked (this is default)
-        _parent	Opens the linked document in the parent frame
-        _top	Opens the linked document in the full body of the window
-        framename	Opens the linked document in the named iframe
-        -->
-        <br>
-        <a href="https://www.uol.com.br" target="_blank">Uol blank</a>
-        <br>
-        <a href="https://www.uol.com.br" target="_self">Uol self</a>
-        <br>
-        <a href="https://www.uol.com.br" target="_parent">Uol parent</a>
-        <br>
-        <a href="https://www.uol.com.br" target="_top">Uol top</a>
-        <br>
-        <a href="https://www.uol.com.br" target="_framename">Uol framename</a>
-
-        <!--Atributo media. fazer o teste funcionar-->
-        <br>
-        <a href="data/info.txt" media="print and (resolution:300dpi)">
-        Open media attribute page for print.</a>
-        
-        <!--Atributo rel. testar-->
-        <br>
-        <a rel="nofollow" href="http://www.functravel.com/">Cheap Flights</a>
-
-
-    </body>
+</body>
 </html>
